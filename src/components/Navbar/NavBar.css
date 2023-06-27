@@ -1,0 +1,77 @@
+.navbar-header {
+  background-color:  #007bff;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px; /* Adjust the gap between buttons as needed */
+}
+
+.navbar-buttons-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap between buttons as needed */
+}
+
+.navbar-buttons button {
+  margin-right: 10px;
+  background-color:  #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+.navbar-buttons .navbar-button {
+  background-color:  #007bff;
+  color: white;
+  border-radius: 20px;
+}
+
+.navbar-buttons .navbar-button:hover {
+  background-color: white;
+  color:  #007bff;
+}
+
+
+.navbar-buttons button:hover {
+  background-color: white;
+  color:  #007bff;
+}
+
+.navbar-buttons a {
+  text-decoration: none;
+  color:  #007bff;
+  
+}
+
+.navbar-buttons .MuiButton-root {
+  min-width: auto;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  background-color:  #007bff;
+  color: white;
+}
+
+.navbar-buttons {
+  padding: 10px;
+}
+
+.navbar-buttons-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-buttons-right > * {
+  margin-left: 10px;
+}
