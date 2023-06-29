@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Navbar/NavBar';
 import Footer from '../Footer/Footer';
 import './HomePage.css';
+import HospitalList from '../HospitalList';
 
 const HomePage: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage: React.FC = () => {
           <h1 className="hero-title">Harnessed for productivity.</h1>
           <h2 className="hero-subtitle">This is not the main text</h2>
           <h2 className="hero-subtitle">Not Main Text.</h2>
+          <HospitalList />
         </div>
       </div>
       <div className="content-section">

@@ -5,6 +5,7 @@ import './NavBar.css';
 
 const Navbar: React.FC = () => {
   const [contactAnchorEl, setContactAnchorEl] = React.useState<null | HTMLElement>(null);
+  const [resourcesAnchorEl, setResourcesAnchorEl] = React.useState<null | HTMLElement>(null);
 
   const handleContactClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setContactAnchorEl(event.currentTarget);
@@ -12,6 +13,14 @@ const Navbar: React.FC = () => {
 
   const handleContactClose = () => {
     setContactAnchorEl(null);
+  };
+
+  const handleResourcesClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setResourcesAnchorEl(event.currentTarget);
+  };
+
+  const handleResourcesClose = () => {
+    setResourcesAnchorEl(null);
   };
 
   return (
@@ -42,6 +51,28 @@ const Navbar: React.FC = () => {
               <MenuItem onClick={handleContactClose}>
                 <a href="tel:+1234567890">Phone</a>
               </MenuItem>
+            </Menu>
+            <Button
+              color="primary"
+              aria-controls="resources-menu"
+              aria-haspopup="true"
+              onClick={handleResourcesClick}
+              className="navbar-button"
+            >
+              Resources
+            </Button>
+            <Menu
+              id="resources-menu"
+              anchorEl={resourcesAnchorEl}
+              keepMounted
+              open={Boolean(resourcesAnchorEl)}
+              onClose={handleResourcesClose}
+              className="resources-menu"
+            >
+              <MenuItem onClick={handleResourcesClose} component={RouterLink} to="/add-hospital">
+                Add Hospital
+              </MenuItem>
+              {/* Add more menu items for additional resources */}
             </Menu>
             <Button
               color="primary"
