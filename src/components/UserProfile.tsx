@@ -16,16 +16,12 @@ const UserProfile: React.FC = () => {
   return (
     <div>
       <h2>User Profile</h2>
-      {/* Display user information */}
       <form onSubmit={handleUpdateProfile}>
-        {/* Profile fields */}
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" />
 
         <label htmlFor="email">Email</label>
         <input type="email" id="email" name="email" />
-
-        {/* Additional fields as needed (e.g., phone number, address) */}
 
         <button type="submit">Update Profile</button>
       </form>
